@@ -16,53 +16,64 @@
 </head>
 
 <body>
-
     <main class="container">
         <section class="form">
             <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
             <div class="box box-rounded">
-                <form id="userData" action="">
-                    <label for="userName">Nome e Cognome</label>
-                    <input type="text" id="userName" name="userName">
-
-                    <label for="userKm">Km da percorrere</label>
-                    <input type="number" id="userKm" name="userKm">
-
-                    <label for="userAge">Fascia d'età:</label>
-                    <select name="userAge" id="userAge">
-                        <option value="Minorenne">Minorenne</option>
-                        <option value="Maggiorenne">Maggiorenne</option>
-                        <option value="Over 65">Over 65</option>
-                    </select>
-
-                    <button type="submit">Genera</button>
-                    <button type="reset">Annulla</button>
+                <form id="userData" action="" class="row">
+                    <div class="col">
+                        <label for="userName">Nome e Cognome</label>
+                        <input type="text" id="userName" name="userName" required>
+                    </div>
+                    <div class="col">
+                        <label for="userKm">Km da percorrere</label>
+                        <input type="number" id="userKm" name="userKm" required>
+                    </div>
+                    <div class="col">
+                        <label for="userAge">Fascia d'età</label>
+                        <select name="userAge" id="userAge">
+                            <option value="Minorenne">Minorenne</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Over 65">Over 65</option>
+                        </select>
+                    </div>
+                    <div class="col-xl">
+                        <button type="submit" class="btn">Genera</button>
+                        <button type="reset" class="btn">Annulla</button>
+                    </div>
                 </form>
+            </div>
         </section>
-
-
         <section class="ticket d-none">
             <h1>IL TUO BIGLIETTO</h1>
             <div class="box">
                 <h3>DETTAGLIO PASSEGGERI</h3>
-                <div class="ticket-head">
-                    <h3>NOME PASSEGGERO</h3>
-                    <span><strong id="ticketUserName">Jon Snow</strong></span>
-                </div>
-                <div class="ticketbody">
-                    <span><strong> Offerta: </strong></span>
-                    <span id="ticketOfferType"> Biglietto </span> <br>
-                    <span><strong> Carrozza:</strong></span>
-                    <span id="ticketCarriage"> 1</span> <br>
-                    <span><strong> Codice CP:</strong></span>
-                    <span id="ticketCode"> 1 </span> <br>
-                    <span><strong> Costo Biglietto:</strong></span>
-                    <span id="ticketPrice"> 1 </span>
+                <div class="row">
+                    <div class="ticket-head">
+                        <h3>NOME PASSEGGERO</h3>
+                        <span><strong id="ticketUserName">Jon Snow</strong></span>
+                    </div>
+                    <div class="col">
+                        <span><strong>Offerta</strong></span>
+                        <span id="ticketOfferType"> - </span>
+                    </div>
+                    <div class="col">
+                        <span><strong>Carrozza</strong></span>
+                        <span id="ticketCarriage"> - </span>
+                    </div>
+                    <div class="col">
+                        <span><strong>Codice CP</strong></span>
+                        <span id="ticketCode"> - </span>
+                    </div>
+                    <div class="col">
+                        <span><strong>Costo Biglietto</strong></span>
+                        <span id="ticketPrice"> - </span>
+                    </div>
                 </div>
             </div>
-
         </section>
     </main>
     <script src="js/script.js"></script>
 </body>
+
 </html>

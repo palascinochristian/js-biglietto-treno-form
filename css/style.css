@@ -23,16 +23,93 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    
+
 }
+
+.form .row {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.form .col {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: .9375rem;
+}
+
+.form .col-xl {
+    width: 100%;
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem
+}
+
+.ticket .row {
+    border-top: .0625rem solid gray;
+    border-bottom: .0625rem solid gray;
+    display: flex;
+    margin-bottom: 1.25rem;
+    min-height: 7.5rem;
+
+}
+
+.ticket .col {
+    padding: .625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+
+
+
+/*----------
+   BUTTONS
+-----------*/
+.btn {
+    padding: .3125rem;
+    font-weight: 800;
+    color: #B91550;
+    background-color: #CCCCCC;
+    border: 2px solid #8A8A8A;
+    font-size: 1rem;
+    border-radius: .3125rem;
+}
+
+.btn:hover {
+    border-color: #E4934B;
+}
+
+/*----------
+TYPOGRAPHY
+-----------*/
 
 h1 {
     color: #fff;
     text-align: center;
 }
 
-h3{
+label {
+    color: #B91550;
+    font-weight: 500;
 
+}
+
+input,
+select {
+    border: .125rem solid #B91550;
+    text-align: center;
+    border-radius: .3125rem;
+    padding: .3125rem;
+    font-family: inherit;
+    font-size: .9375rem;
+    font-weight: 500;
+    max-width: 100%;
 }
 
 .box {
@@ -41,11 +118,11 @@ h3{
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 1.25rem;
-    line-height: 3;
 
 }
 
-.box-rounded{
+
+.box-rounded {
     border-radius: .625rem;
 }
 
@@ -53,6 +130,8 @@ h3{
     display: none;
 }
 
-.ticket-head{
-    background-color: #808080
+.ticket-head {
+    background-color: #808080;
+    padding: .625rem 1.25rem;
+    flex-grow: 1;
 }
