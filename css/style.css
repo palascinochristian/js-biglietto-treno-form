@@ -14,17 +14,18 @@ body {
     background-color: #B91550;
     font-family: "Poppins", serif;
     font-style: normal;
-    height: 100vh;
 }
 
 .container {
     max-width: 75rem;
-    max-height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center; 
+    min-height: 100vh;
     margin: 0 auto;
-
 }
+
 
 .form .row {
     display: flex;
