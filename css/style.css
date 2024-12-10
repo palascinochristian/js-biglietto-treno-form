@@ -6,3 +6,53 @@
     margin: 0;
     padding: 0;
 }
+
+/*----------
+    COMMON
+-----------*/
+body {
+    background-color: #B91550;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    height: 100vh;
+}
+
+.container {
+    max-width: 75rem;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+h3{
+
+}
+
+.box {
+    width: 80%;
+    margin: 1.875rem auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1.25rem;
+    line-height: 3;
+
+}
+
+.box-rounded{
+    border-radius: .625rem;
+}
+
+/* .d-none {
+    display: none;
+} */
+
+.ticket-head{
+    background-color: #808080
+}
