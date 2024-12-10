@@ -56,7 +56,7 @@ formElm.addEventListener("submit", function(event) {
     // Calcolo dei valori al momento del submit
     const price = KmPriceCalculator(formKmElm, formAgeElm).toFixed(2); // Prezzo biglietto
     const carriage = randomNum(1, 10); // Numero carrozza
-    const code = randomNum(9000, 10000); // Codice CP
+    const code = randomNum(90000, 100000); // Codice CP
 
     // Aggiornamento degli elementi nel DOM
     ticketUserNameElm.innerHTML = formUserNameElm.value; //Nome Passeggero
